@@ -11,6 +11,7 @@
 	"appid": "wx2763df09f9beb881",
 	"projectname": "minBirds",
 	"libVersion": "2.2.5",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,

@@ -1,0 +1,15 @@
+<view class='title'>职业老司机</view>
+<form bindsubmit='formSubmit'>
+  <view class='lis'>
+    <input name="name" type='text' placeholder='姓名'></input>
+  </view>
+  <view class='lis'>
+    <input name='tel' type='number' placeholder='电话'></input>
+  </view>
+  <view class='lis'>
+    <textarea name='ots' placeholder='其他问题'></textarea>
+  </view>
+  <view class='lis btn'>
+    <button formType='submit' hover-class='other-button-hover'>提 交</button>
+  </view>
+</form>

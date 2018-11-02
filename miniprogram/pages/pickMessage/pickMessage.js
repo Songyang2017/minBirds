@@ -1,4 +1,4 @@
-// pages/deployFunctions/deployFunctions.js
+// pages/pickMessage/pickMessage.js
 Page({
 
   /**
@@ -14,7 +14,34 @@ Page({
   onLoad: function (options) {
 
   },
+  formSubmit: function(e) {
+    let nam = e.detail.value.name
+    let tel = e.detail.value.tel
+    if (!nam || !tel) {
+      wx.showToast({
+        title: '请填写完整！',
+          icon: 'none'
+      })
+      return
+    }
+    const db = wx.cloud.database()
 
+    db.collection('pickedMessage').add({
+      data: e.detail.value,
+      success: res => {
+        wx.showToast({
+          title: '提交成功！',
+          success: function(res) {
+            setTimeout(()=>{
+              wx.navigateTo({
+                url: '../notice/notice'
+              })
+            }, 200)
+          },
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

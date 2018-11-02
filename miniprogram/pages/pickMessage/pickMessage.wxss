@@ -1,0 +1,28 @@
+/* pages/pickMessage/pickMessage.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.title{
+  text-align: center;
+  font-size: 32rpx;
+  padding: 20rpx 0;
+}
+.lis{
+  margin-bottom: 20rpx;
+  padding: 16rpx;
+  font-size: 32rpx;
+  background-color: #ffffff;
+}
+.btn{
+  background-color: transparent;
+}
+.btn button{
+  background-color: #4A4C5B;
+  font-size: 32rpx;
+  color: #ffffff;
+  padding: 8rpx 0;
+}
+.other-button-hover{
+  color: red;
+  background-color: rgba(74, 76, 91, 0.829);
+}
